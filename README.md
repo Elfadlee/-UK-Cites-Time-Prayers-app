@@ -50,22 +50,6 @@ export async function getPrayerTimes(city) {
 }
 
 
-
-Material UI Grid v2 Notes
-- Use `container` on the parent grid.
-- Do _not_ use `item` or `xs`/`md` props in v2.
-- Use `size` instead (single value or object):
-```jsx
-<Grid container spacing={3}>
-  <Grid size={{ xs: 12, md: 6 }}>...</Grid>
-  <Grid size={{ xs: 12, md: 6 }}>...</Grid>
-</Grid>
-
-- Valid `spacing` is typically `0–10`.
-
-
-Localization (Optional)
-- If you display Arabic dates, configure Day.js locale:
 --js --
 import dayjs from "dayjs";
 import "dayjs/locale/ar";
